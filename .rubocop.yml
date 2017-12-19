@@ -441,6 +441,10 @@ Style/ZeroLengthPredicate:
   Enabled: false
 
 # Cops that don't feel useful for the precourse
+Metrics/MethodLength:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
 Layout/TrailingBlankLines:
   Enabled: false
 Style/TrivialAccessors:
