@@ -439,3 +439,129 @@ Style/WordArray:
   Enabled: false
 Style/ZeroLengthPredicate:
   Enabled: false
+
+# Cops that don't feel useful for the precourse
+Layout/TrailingBlankLines:
+  Enabled: false
+Style/TrivialAccessors:
+  Enabled: false
+Style/NilComparison:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Lint/LiteralAsCondition:
+  Enabled: false
+Metrics/BlockNesting:
+  Enabled: false
+Style/MultipleComparison:
+  Enabled: false
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+Performance/HashEachMethods:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Performance/Casecmp:
+  Enabled: false
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+Lint/AssignmentInCondition:
+  Enabled: false
+Style/SymbolLiteral:
+  Enabled: false
+Style/RandomWithOffset:
+  Enabled: false
+Style/NegatedIf:
+  Enabled: false
+Style/NegatedWhile:
+  Enabled: false
+Style/CommentedKeyword:
+  Enabled: false
+Performance/Sample:
+  Enabled: false
+
+# Mistakes that precoursers have actually made that Rubocop has
+# usefully found
+
+# Layout/IndentationConsistency:
+#   Enabled: false
+# Layout/IndentationWidth:
+#   Enabled: false
+# Layout/EmptyLines:
+#   Enabled: false
+# Layout/ExtraSpacing:
+#   Enabled: false
+# Layout/SpaceInsideBlockBraces:
+#   Enabled: false
+# Layout/SpaceAfterComma:
+#   Enabled: false
+# Layout/EmptyLineBetweenDefs:
+#   Enabled: false
+# Layout/SpaceInsideHashLiteralBraces:
+#   Enabled: false
+# Layout/SpaceAroundOperators:
+#   Enabled: false
+# Layout/LeadingCommentSpace:
+#   Enabled: false
+# Lint/UselessAssignment:
+#   Enabled: false
+# Naming/VariableName:
+#   Enabled: false
+# Metrics/MethodLength:
+#   Enabled: false
+# Layout/SpaceInsideParens:
+#   Enabled: false
+# Layout/SpaceAroundBlockParameters:
+#   Enabled: false
+# Layout/SpaceBeforeBlockBraces:
+#   Enabled: false
+# Lint/UnusedBlockArgument:
+#   Enabled: false
+# Lint/EndAlignment:
+#   Enabled: false
+# Style/RedundantParentheses:
+#   Enabled: false
+# Lint/UnusedMethodArgument:
+#   Enabled: false
+# Lint/DefEndAlignment:
+#   Enabled: false
+# Layout/SpaceBeforeFirstArg:
+#   Enabled: false
+# Metrics/LineLength:
+#   Enabled: false
+# Layout/SpaceAroundKeyword:
+#   Enabled: false
+# Layout/SpaceBeforeComma:
+#   Enabled: false
+# Naming/MethodName:
+#   Enabled: false
+# Lint/BlockAlignment:
+#   Enabled: false
+# Style/IdenticalConditionalBranches:
+#   Enabled: false
+# Lint/AmbiguousBlockAssociation:
+#   Enabled: false
+# Style/DefWithParentheses:
+#   Enabled: false
+# Lint/ConditionPosition:
+#   Enabled: false
+# Lint/StringConversionInInterpolation:
+#   Enabled: false
+# Layout/SpaceInsideArrayLiteralBrackets:
+#   Enabled: false
+# Layout/BlockEndNewline:
+#   Enabled: false
+# Lint/Void:
+#   Enabled: false
+# Naming/PredicateName:
+#   Enabled: false
+# Lint/ElseLayout:
+#   Enabled: false
+# Style/RedundantSelf:
+#   Enabled: false
+# Style/InverseMethods:
+#   Enabled: false
