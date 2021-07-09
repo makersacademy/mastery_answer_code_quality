@@ -4,7 +4,14 @@ class AnswerCodeQuality
   end
 
   def acceptable?
-    rubocop_execution.successful?
+    successful = rubocop_execution.successful?
+    
+    if !successful
+      puts "Printing rubocop output for debugging:"
+      puts rubocop_execution.whole_output
+    end
+
+    successful
   end
 
   def problems
