@@ -3,6 +3,10 @@ class AnswerCodeQuality
     @rubocop_execution = rubocop_execution
   end
 
+  def whole_rspec_output
+    rubocop_execution.whole_output
+  end
+
   def acceptable?
     successful = rubocop_execution.successful?
     
