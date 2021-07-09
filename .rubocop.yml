@@ -1,4 +1,7 @@
-Metrics/LineLength:
+AllCops:
+  SuggestExtensions: false
+
+Layout/LineLength:
   # We set up error messages here and I don't want people
   # suboptimising by making  their variables shorter... so we'll relax
   # this a bit. Usually lines like this:
@@ -37,8 +40,8 @@ Layout/EmptyLines:
   Enabled: true
 Layout/ExtraSpacing:
   Enabled: true
-Style/GuardClause:
-  Enabled: true
+# Style/GuardClause: # Concealed by later line
+  # Enabled: true
 Style/IdenticalConditionalBranches:
   Enabled: true
 Style/InverseMethods:
@@ -47,12 +50,12 @@ Layout/LeadingCommentSpace:
   Enabled: true
 Naming/MethodName:
   Enabled: true
-Style/NegatedIf:
-  Enabled: true
-Style/NegatedWhile:
-  Enabled: true
-Style/NilComparison:
-  Enabled: true
+# Style/NegatedIf: # Concealed by later line
+#   Enabled: true
+# Style/NegatedWhile: # Concealed by later line
+#   Enabled: true
+# Style/NilComparison: # Concealed by later line
+#   Enabled: true
 Style/Not:
   Enabled: true
 Style/NumericLiterals:
@@ -111,12 +114,12 @@ Layout/SpaceInsideRangeLiteral:
   Enabled: true
 Layout/SpaceInsideStringInterpolation:
   Enabled: true
-Style/SymbolLiteral:
-  Enabled: true
-Layout/TrailingBlankLines:
-  Enabled: true
-Style/TrivialAccessors:
-  Enabled: true
+# Style/SymbolLiteral: # Concealed by later line
+#   Enabled: true
+# Layout/TrailingEmptyLines: # Concealed by later line
+#   Enabled: true
+# Style/TrivialAccessors: # Concealed by later line
+#   Enabled: true
 Naming/VariableName:
   Enabled: true
 Naming/FileName:
@@ -131,11 +134,11 @@ Layout/AccessModifierIndentation:
   Enabled: false
 Style/Alias:
   Enabled: false
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: false
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 Style/AndOr:
   Enabled: false
@@ -156,8 +159,6 @@ Style/BeginBlock:
 Style/BlockComments:
   Enabled: false
 Style/BlockDelimiters:
-  Enabled: false
-Style/BracesAroundHashParameters:
   Enabled: false
 Style/CaseEquality:
   Enabled: false
@@ -245,7 +246,7 @@ Layout/FirstMethodParameterLineBreak:
   Enabled: false
 Layout/FirstParameterIndentation:
   Enabled: false
-Style/FlipFlop:
+Lint/FlipFlop:
   Enabled: false
 Style/For:
   Enabled: false
@@ -267,13 +268,13 @@ Style/IfWithSemicolon:
   Enabled: false
 Style/ImplicitRuntimeError:
   Enabled: false
-Layout/IndentArray:
+Layout/FirstArrayElementIndentation:
   Enabled: false
-Layout/IndentAssignment:
+Layout/AssignmentIndentation:
   Enabled: false
-Layout/IndentHash:
+Layout/FirstHashElementIndentation:
   Enabled: false
-Layout/IndentHeredoc:
+Layout/HeredocIndentation:
   Enabled: false
 Style/InfiniteLoop:
   Enabled: false
@@ -295,7 +296,9 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MethodDefParentheses:
   Enabled: false
-Style/MethodMissing:
+Lint/MissingSuper:
+  Enabled: false
+Style/MissingRespondToMissing:
   Enabled: false
 Style/MissingElse:
   Enabled: false
@@ -405,13 +408,15 @@ Style/SymbolArray:
   Enabled: false
 Style/SymbolProc:
   Enabled: false
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: false
 Style/TernaryParentheses:
   Enabled: false
 Style/TrailingCommaInArguments:
   Enabled: false
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+Style/TrailingCommaInHashLiteral:
   Enabled: false
 Style/TrailingUnderscoreVariable:
   Enabled: false
@@ -419,13 +424,11 @@ Layout/TrailingWhitespace:
   Enabled: false
 Style/UnlessElse:
   Enabled: false
-Style/UnneededCapitalW:
+Style/RedundantCapitalW:
   Enabled: false
-Style/UnneededInterpolation:
+Style/RedundantPercentQ:
   Enabled: false
-Style/UnneededPercentQ:
-  Enabled: false
-Style/VariableInterpolation:
+Style/RedundantInterpolation:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
@@ -445,7 +448,7 @@ Metrics/MethodLength:
   Enabled: false
 Metrics/BlockLength:
   Enabled: false
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Enabled: false
 Style/TrivialAccessors:
   Enabled: false
@@ -465,11 +468,7 @@ Style/MultipleComparison:
   Enabled: false
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
-Performance/HashEachMethods:
-  Enabled: false
 Style/GuardClause:
-  Enabled: false
-Performance/Casecmp:
   Enabled: false
 Lint/ParenthesesAsGroupedExpression:
   Enabled: false
@@ -484,8 +483,6 @@ Style/NegatedIf:
 Style/NegatedWhile:
   Enabled: false
 Style/CommentedKeyword:
-  Enabled: false
-Performance/Sample:
   Enabled: false
 
 # Mistakes that precoursers have actually made that Rubocop has
