@@ -444,6 +444,8 @@ Style/ZeroLengthPredicate:
   Enabled: false
 
 # Cops that don't feel useful for the precourse
+Style/CaseLikeIf:
+  Enabled: false
 Metrics/MethodLength:
   Enabled: false
 Metrics/BlockLength:
